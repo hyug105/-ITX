@@ -50,13 +50,13 @@ main .bg{
     margin-bottom: 80px;
 }
 main .bg1{
-    background-image: url(/img/main/bg1.png);
+    background-image: url(img/main/bg1.png);
 }
 main .bg2{
-    background-image: url(/img/main/bg5.jpg);
+    background-image: url(img/main/bg5.jpg);
 }
 main .bg3{
-    background-image: url(/img/main/bg4.jpeg);
+    background-image: url(img/main/bg4.jpeg);
 }
 
 main .textwrap{
@@ -72,7 +72,7 @@ i.fa-pause{
     margin-left: 80px;  
     width: 18px;
     height: 18px;
-    background: url('/img/main/stop.png') no-repeat center center;
+    background: url('img/main/stop.png') no-repeat center center;
     background-size: contain;
     cursor: pointer;
 }
@@ -83,7 +83,7 @@ i.fa-play{
     margin-left: 80px;  
     width: 20px;
     height: 20px;
-    background: url('/img/main/play.png') no-repeat center center;
+    background: url('img/main/play.png') no-repeat center center;
     background-size: contain;
     cursor: pointer;
 }
@@ -168,7 +168,7 @@ main .buttonwrap{
 }
 /* box1 */
 .section2 .boxwrap .box1{
-    background: url(/img/section2/about_bg1.png)center;
+    background: url(img/section2/about_bg1.png)center;
 }
 .section2 .boxwrap .box img{
     position: absolute;
@@ -186,12 +186,12 @@ main .buttonwrap{
 }
 .section2 .boxwrap .box2{
     text-align: center;
-    background: url(/img/section2/about_bg2.png)center;
+    background: url(img/section2/about_bg2.png)center;
     background-size: cover;
 }
 .section2 .boxwrap .box3{
     text-align: center;
-    background: url(/img/section2/about_bg3.png)center;
+    background: url(img/section2/about_bg3.png)center;
     background-size: cover;
 }
 .section2 .on{
@@ -235,7 +235,7 @@ main .buttonwrap{
     background-color: rgb(29, 29, 29);
     color: #d7d7d7;
     height: 100vh;
-    background: url(/img/section3/bg.png) ;
+    background: url(img/section3/bg.png) ;
 }
 .section3 h1{
     padding-top: 140px;
@@ -357,7 +357,7 @@ swiper-slide p{
     display: inline-block;
 }
 .section5{
-    background: url(/img/section5/bg.png) center;
+    background: url(img/section5/bg.png) center;
     background-size: cover;
     padding-bottom: 50px;
 }

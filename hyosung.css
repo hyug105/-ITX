@@ -281,10 +281,10 @@ main h3{
 .section4 .title{
     padding-left: 120px
 }
+
 .swiper {
     height: 600px;
     margin-left: 400px;
-    /* max-width: 90%;   */
 }
 .swiper-button-prev::after,
 .swiper-button-next::after{
@@ -314,7 +314,7 @@ main h3{
     height: 50px;
 }
 .swiper-slide {
-  width: 500px;
+  max-width: 500px;
   height: 400px;
   font-size: 18px;
   background: #fff;
@@ -367,7 +367,7 @@ main h3{
     padding-left: 250px;
 }
 .section5 .box{
-    width: 400px;
+    max-width: 360px;
     height: 460px;
     border-radius: 15px;
     background-color: #fff;

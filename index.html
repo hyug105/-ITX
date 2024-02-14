@@ -66,8 +66,9 @@
                     </div>   
                 </div>
             </div>
-                    <button class="play button"></button>
-                    <button class="pause button"></button>
+                
+                    <button class="play button w1200"></button>
+                    <button class="pause button w1200"></button>
 
         </main>
 
@@ -130,7 +131,7 @@
         
         <section class="section4" id="page4">  
 
-            <div class="title w1200">
+            <div class="title">
                 <div class="buttonwrap">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -287,9 +288,7 @@
                             효성ITX는 푸르름..</p>
                     </div>
                 </div>
-
         </section>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
 
 
         <footer>
@@ -409,7 +408,7 @@ $('.section5 .boxwrap').slick({
 </script>
 
 
-<!-- wave -->
+<!-- section4 wave -->
 <script>
 let c = document.getElementById('canvas').getContext('2d')
 let postctx = document.body.appendChild(document.createElement('canvas')).getContext('2d')
@@ -444,8 +443,7 @@ let loop = (timeStamp) => {
     postctx.canvas.height = canvas.height = postctx.canvas.offsetHeight
   }
 
-  
-	c.fillStyle = `hsl(200deg, 100%, 2%)`
+  c.fillStyle = `hsl(200deg, 100%, 2%)`
   c.fillRect(0, 0, canvas.width, canvas.height)
   c.save()
   c.translate(canvas.width / 2, canvas.height / 2)
@@ -494,8 +492,6 @@ let loop = (timeStamp) => {
 
     x /= z / perspective
     y /= z / perspective
-    
-    
         
     if (a < 0.01) return
     if (z < 0) return

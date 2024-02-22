@@ -259,9 +259,7 @@ main h4{
         color: #f5f5f5;
         font-weight: 500;
     }
-    .section2 .boxwrap img:not(.on){
-        padding-top: 15px;
-    }
+
     .section2 .boxwrap h5{
         line-height: 24px;
         color: #c4c4c4;
@@ -307,7 +305,8 @@ main h4{
     /* .section3 */
     .section3{
         color: #d7d7d7;
-        padding-top: 160px;
+        padding-top: 230px;
+        padding-bottom: 100px;
         position: relative;
         z-index: 10;
         height: 600px;

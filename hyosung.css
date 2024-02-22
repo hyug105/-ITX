@@ -101,7 +101,7 @@ input[id="menuicon"]:checked + label span:nth-child(3){
 header .sidebar{
     width: 400px;
     height: 100% ;
-    background: rgba(242, 242, 242, 0.9);
+    background: rgba(242, 242, 242);
     position: fixed;
     top: 0;
     right: -430px;   

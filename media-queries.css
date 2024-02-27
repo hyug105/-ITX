@@ -2,7 +2,7 @@
 
 /* 태블릿 */
 
-@media (max-width: 768px){
+@media (max-width: 770px){
     .inner{
         padding: 0px 24px 0px 24px;
     }
@@ -338,7 +338,7 @@
         height: 12px;
         padding: 8px 18px 8px 18px;
     } 
-    main h3{
+    main .main_title{
         font-size: 26px;
         line-height: 38px;
         font-weight: 550;

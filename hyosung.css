@@ -332,7 +332,7 @@ main h4{
         z-index: 50;
         cursor: pointer;
     }
-    .box2, .box3, .box4 {
+    .s3-box2, .s3-box3, .s3-box4 {
         margin-left: -1px;
     }
     .section3 .boxwrap{
@@ -409,7 +409,7 @@ main h4{
     .swiper-button-next::after{
         display: none;
     } 
-    .section4 .title{
+    .section4 .titlewrap{
         display: flex;
         justify-content: space-between;
         padding-bottom: 30px;

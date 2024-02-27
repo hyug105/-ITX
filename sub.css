@@ -1,0 +1,11 @@
+/* 모바일 세로 */
+@media (max-width: 480px) {
+}
+
+
+ /* 모바일 가로, 타블렛 세로 */
+@media (max-width: 768px) {}
+ 
+
+ /* 타블렛 가로, 노트북 세로 */
+@media (min-width: 1024px) {}

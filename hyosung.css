@@ -504,11 +504,14 @@ main h4{
         height: 800px;
         display: block;
     }
+
     .section5 .boxwrap{
-        margin-top: 160px;
+        margin-top: 60px;
+        
+        
     }
     .section5 .boxwrap .box{
-        width: 400px;
+        width: 450px;
         height: 440px;
         border-radius: 15px;
         background-color: #fff;
@@ -523,6 +526,12 @@ main h4{
         font-size: 24px;
         padding-bottom: 10px;
     }
+    .section5 .title{
+        font-size: 44px;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 100px;
+    }
     .section5 h2{
         font-size: 26px;
         margin-top: 10px;
@@ -533,6 +542,11 @@ main h4{
         padding-top: 10px;
         line-height: 30px;
         color: #737373; 
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+		overflow: hidden;
     }
 
 /* slick-dots */

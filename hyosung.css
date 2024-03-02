@@ -181,42 +181,44 @@ header .sidebar{
     transition: all .3s ease-out;
     padding: 0px;
     margin: 0px;
+    padding-top: 200px;
 }
-.sidebar ul{
-    padding:80px 40px 40px 40px;
+.logowrap{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-.sidebar li{
-    font-size: 21px;
-    padding: 30px;
-    color: #393939;
-    border-bottom: 1px solid #b3b3b3;
-}
-
-.sidebar li a{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.sidebar li a::after{
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url(img/main/add-line.png) no-repeat center;
-    background-size: contain;
-}
-.sidebar ul>a{
-    text-align: center;
+    padding-bottom: 60px;
 }
 .menu_logo{
-    width: 240px;
-    padding-bottom: 20px;
+    width: 220px;
+}
+.sidewrap{
+    padding-top: 100px;
+}
+ .side_dep1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0px 40px 0px;
+    max-width: 1700px;
+    border-top: 1px solid #e1e1e1;
  }
-
-
+ .dep1_title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 100px;
+    color: #3a3a3a;
+ }
+ .side_dep2{
+    font-weight: 500;
+    display: flex;
+    flex-direction:row;
+    line-height: 28px;
+ }
+ .side_dep2 li{
+    padding-right: 50px;
+    display: block;
+ }
 
 
 /* main */

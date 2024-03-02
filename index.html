@@ -100,20 +100,62 @@
                         <span></span>
                         <span></span>
                     </label>    
-                <div class="sidebar inner">   
-                    <ul>
-                        <a href="#"><img src="img/main/logo_hov.png" alt="" class="menu_logo"></a>
 
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">사업분야</a></li>
-                        <li><a href="#">투자정보</a></li>
-                        <li><a href="#">홍보센터</a></li>
-                        <li><a href="#">인재채용</a></li>
+
+                <div class="sidebar inner">   
+                <div class="sidewrap">
+                    <a href="#" class="logowrap"><img src="img/main/logo_hov.png" alt="" class="menu_logo"></a>
+
+                    <ul class="side_dep1">
+                        <a href="#" class="dep1_title">회사소개</a>
+                            <ul class="side_dep2">
+                                <li><a href="#">기업개요</a></li>
+                                <li><a href="#">CEO 인사말</a></li>
+                                <li><a href="#">Hyosung Way</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                     </ul>      
+                    <ul class="side_dep1">  
+                        <a href="#" class="dep1_title">사업분야</a>
+                            <ul class="side_dep2">
+                                <li><a href="#">사업개요</a></li>
+                                <li><a href="#">IT Solution & Service</a></li>
+                                <li><a href="#">Smart Factory Solution</a></li>
+                                <li><a href="#">Contact Center Service</a></li>
+                                <li><a href="#">Contact Center AI Solution</a></li>
+                                <li><a href="#">Cloud Contact Center Solution</a></li>
+                                <li><a href="#">Display Solution</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="side_dep1">
+                        <a href="#" class="dep1_title">투자정보</a>
+                            <ul class="side_dep2">
+                                <li><a href="#">재무정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">효성ITX 공고</a></li>
+                                <li><a href="#">IR정보</a></li>
+                                <li><a href="#">주식정보</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="side_dep1">
+                        <a href="#" class="dep1_title">홍보센터</a>
+                            <ul class="side_dep2">
+                                <li><a href="#">뉴스센터</a></li>
+                                <li><a href="#">수상실적</a></li>
+                            </ul>
+                    </ul>        
+                    <ul class="side_dep1">
+                        <a href="#" class="dep1_title" d>인재채용</a>
+                            <ul class="side_dep2">
+                                <li><a href="#">인재상</a></li>
+                                <li><a href="#">인재육성</a></li>
+                                <li><a href="#">평가/보상</a></li>
+                                <li><a href="#">채용안내</a></li>
+                            </ul>
                     </ul>
                 </div>
-
             </div>    
-            
+        </div>  
             
 
         </header>
@@ -559,6 +601,14 @@ $('.section5 .boxwrap').slick({
 });
 </script>
 
+<!-- sidemenu -->
+<script>
+   $(document).ready(function() {
+  $('.dep1_title').click(function() {
+    $(this).siblings('.side_dep2').slideToggle();
+  });
+});
+</script>
 
 
 

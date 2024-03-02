@@ -15,27 +15,15 @@ header{
     left: 0;
     top: 0;
     z-index: 20;
-}
-header .gnb{
-    display: flex;
     align-items: center;
 }
-header .gnb li{
-    margin-right: 25px;
-    margin-left: 25px;
-    transition: .5s;
+header .logo{
+    display: flex;
+    background: url(img/main/logo_w.png) no-repeat center;
+    background-size: contain;
+    width: 140px;
+    height: 100px;
 }
-header .gnb li:hover{
-    color: #ffffff;
-    padding: 25px;
-} 
-
-header .gnb li:hover h1,
-header .gnb li:hover div {
-    position: fixed;
-}
-
-
 header .snb{
     display: flex;
     align-items: center;
@@ -44,11 +32,83 @@ header .snb div{
     margin-right: 25px;
     margin-left: 25px;
 }
-header .logo{
+header .main_menu{
     display: flex;
     align-items: center;
-    width: 180px;
-    overflow: hidden;
+}
+header .main_menu>li{
+    margin-right: 25px;
+    margin-left: 25px;
+    transition: .5s;
+}
+.dep1 .dep2 {
+    display: none;
+    position: absolute;
+}
+header .dep2 li a{
+    display: inline-block;
+    padding-top: 25px;
+    font-size: 15px;
+}
+header:hover .dep2{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+}
+.main_menu{
+    transition: .3s ease-in-out;
+}
+/* header:after */
+header:after{
+    background-color: #fdfdfd;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 550px;
+    z-index: -100;
+    transition: .3s ease-in-out;
+}
+header:hover:after{
+    display: block;
+}
+/* hover */
+
+header:hover .dep2 li:nth-child(1){
+    padding-top: 40px;
+} 
+header:hover .logo,.sn{
+    padding: 0px;
+}
+header:hover .dep1{
+    padding-right: 50px;
+    color: rgb(62, 62, 62);
+    font-weight: 500
+}
+header:hover .dep2{
+    font-weight: 400
+}
+.dep1 a:hover,
+.dep2 a:hover,
+.snb a:hover {
+    color: #250088;
+    font-weight: 600;
+}
+header:hover .snb{
+    color: rgb(62, 62, 62);
+}
+header:hover input[id="menuicon"] + label span{
+    background:  rgb(62, 62, 62);
+}
+header:hover .logo{
+    display: flex;
+    background: url(img/main/logo_hov.png) no-repeat center;
+    background-size: contain;
+    width: 170px;
+    height: 100px;
 }
 
 /* 메뉴버튼 */
@@ -99,36 +159,64 @@ input[id="menuicon"]:checked + label span:nth-child(3){
 }
 
 /* 슬라이드 메뉴바 */
-header .sidebar{
-    width: 400px;
-    height: 100% ;
-    background: rgba(242, 242, 242);
-    position: fixed;
-    top: 0;
-    right: -430px;   
-    z-index: 1;
-    transition: all .35s;
-    padding-top: 40px;
-}
 input[id='menuicon']:checked + label + .sidebar{
+    top: 0px;
     right: 0;
     padding: 0;
     margin: 0;
+    opacity: 1;
+    transition: 0.5s ease-out;
 }
 /* 인풋 요소중  menuicon아이디값을 갖고있는 요소 선택, 체크되었을 때 + 인풋 다음 요소: label + (인접요소 선택자'+')div(=sidebar) */
-.sidebar ul{
-    padding-left:40px;
-    padding-top: 60px;
+header .sidebar{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(249, 249, 249);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: -200%;   
+    z-index: 1;
+    transition: all .3s ease-out;
+    padding: 0px;
+    margin: 0px;
 }
-.sidebar li{
-    font-size: 20px;
+.sidebar ul{
+    padding:80px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 5px;
-    color: #393939;
 }
+.sidebar li{
+    font-size: 21px;
+    padding: 30px;
+    color: #393939;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.sidebar li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar li a::after{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(img/main/add-line.png) no-repeat center;
+    background-size: contain;
+}
+.sidebar ul>a{
+    text-align: center;
+}
+.menu_logo{
+    width: 240px;
+    padding-bottom: 20px;
+ }
+
+
 
 
 /* main */
@@ -512,7 +600,7 @@ main h4{
     }
     .section5 .boxwrap .box{
         width: 450px;
-        height: 440px;
+        /* height: 440px; */
         border-radius: 15px;
         background-color: #fff;
         padding: 30px;
